@@ -1,0 +1,1712 @@
+/* -------------------------------- Main CSS -------------------------------- */
+
+/* 
+    *  CSS TABLE OF CONTENTS
+    *   
+    *  1.0 - Common CSS
+    *  2.0 - CSS Elements
+    *  3.0 - Login Page
+    *  4.0 - Side-bar Component
+    *  5.0 - Header Component
+    *  6.0 - Base Modal Window 
+    *  7.0 - Common Background
+    *  8.0 - Dashboard -Body
+        *  8.1 - Row One
+            * 8.1.1 - Sales Box
+            * 8.1.2 - Transaction Box
+            * 8.1.3 - Statistics Box
+        *  8.2 - Row Two
+            * 8.2.1 - Table
+                * 8.2.1.1 - Customize Table Checkbox
+            * 8.2.2 - Chart
+        *  8.3 - Profile Modal Window
+    *  9.0 - Master Setting -Body
+    *  10.0 - Trial CSS
+    */
+
+/* -------------------------------------------------------------------------- */
+/*                             1.0 - Common CSS                               */
+/* -------------------------------------------------------------------------- */
+
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 100%;
+  list-style: none;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  cursor: default;
+  position: fixed;
+  font-size: 16px;
+  color: #313131;
+  line-height: 1.6;
+  background-color: #f3f3f3;
+  font-family: Inter, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  padding: 10px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             2.0 - CSS Elements                             */
+/* -------------------------------------------------------------------------- */
+
+input[type="text"] {
+  width: 90%;
+  border-radius: 7px;
+  padding: 7px 10px;
+  outline: none;
+  vertical-align: unset;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: 0.1rem solid #bbc1e1;
+}
+
+input[type="text"]:hover {
+  border-color: #275efe;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
+  border-color: #275efe;
+}
+
+input[type="text"]:disabled {
+  background: #f6f8ff;
+  cursor: not-allowed;
+  opacity: 0.9;
+  border-color: #bbc1e1;
+}
+
+select {
+  width: 90%;
+  border-radius: 7px;
+  padding: 9px 10px;
+  outline: none;
+  vertical-align: unset;
+  /* margin: 0.5rem; */
+  cursor: pointer;
+  border: 0.1rem solid #bbc1e1;
+}
+
+select:hover {
+  border-color: #275efe;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
+  border-color: #275efe;
+}
+
+select:disabled {
+  background: #f6f8ff;
+  cursor: not-allowed;
+  opacity: 0.9;
+  border-color: #bbc1e1;
+}
+
+input[type="password"] {
+  width: 90%;
+  border-radius: 7px;
+  padding: 7px 10px;
+  outline: none;
+  vertical-align: unset;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: 0.1rem solid #bbc1e1;
+}
+
+/* input[type="text"]:hover {
+        border-color: #275efe;
+    } */
+
+input[type="password"]:hover {
+  border-color: #275efe;
+}
+
+input[type="text"]:focus {
+  box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
+  border-color: #275efe;
+}
+input[type="password"]:focus {
+  box-shadow: 0 0 0 2px rgba(39, 94, 254, 0.3);
+  border-color: #275efe;
+}
+
+input[type="text"]:disabled {
+  background: #f6f8ff;
+  cursor: not-allowed;
+  opacity: 0.9;
+  border-color: #bbc1e1;
+}
+input[type="password"]:disabled {
+  background: #f6f8ff;
+  cursor: not-allowed;
+  opacity: 0.9;
+  border-color: #bbc1e1;
+}
+
+.btn {
+  width: 90%;
+  border-radius: 7px;
+  padding: 8px 10px;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: unset;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+  color: #ffffff;
+  border: 0.1rem solid #bbc1e1;
+  background: #275efe;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             3.0 - Login Page                               */
+/* -------------------------------------------------------------------------- */
+
+.login-background {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.login-container {
+  width: 48vw;
+  height: 70vh;
+  display: flex;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.login-firstcontainer {
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px 0px 0px 20px;
+}
+
+.login-firstcontainer h1 {
+  position: absolute;
+  z-index: 1;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 20px;
+}
+
+.loginBG-img {
+  height: 93%;
+  margin-top: 2.32rem;
+  transform: scale(1.164);
+  background-image: url("../Images/image/loginsideimg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.login-firstcontainer img {
+  content: fill;
+}
+
+.login-secondcontainer {
+  width: 50%;
+  margin: 10px;
+}
+
+.login-form {
+  height: 100%;
+  font-size: 14px;
+  /* margin-top: -1rem; */
+  margin-top: -5rem;
+}
+
+.Logintoplink {
+  position: relative;
+  left: 22%;
+  top: 0.2%;
+}
+
+.Logintoplink span {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.line {
+  height: 1px;
+  width: 90%;
+  margin: 2rem 1rem;
+  background-color: #b7b7b783;
+}
+
+.login-form h1 {
+  /* margin-top: 4rem; */
+  margin-top: 5rem;
+  /* margin-bottom: 2rem; */
+  margin-bottom: 0rem;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-left: 1rem;
+}
+
+.loginbottomlink {
+  position: relative;
+  top: 3%;
+  left: 30%;
+}
+
+.login-funtionality {
+  text-align: center;
+}
+
+.login-funtionality > div {
+  height: 1rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.login-funtionality input {
+  cursor: auto;
+}
+
+.login-funtionality button {
+  margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                             4.0 - Side-bar Component                       */
+/* -------------------------------------------------------------------------- */
+
+.sidebar-background {
+  width: 18vw;
+  height: 100vh;
+  position: absolute;
+  background-color: #ffffff;
+  transition: 0.2s;
+}
+
+.sidebar-top {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.menubtn {
+  position: relative;
+  left: 14.5rem;
+  top: -2rem;
+  background: linear-gradient(to bottom right, #ecbaff, hwb(253 56% 14%));
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menubtn i {
+  transform: scale(0.8);
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.CompanyLogoContainer {
+  margin-left: -0.5rem;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CompanyLogoIconModydisabled {
+  display: none;
+}
+
+.CompanyLogoIcon {
+  margin-top: 0.55rem;
+  width: 45px !important;
+}
+
+.CompanyLogoContainer img {
+  width: 110px;
+}
+
+.sidebar-middle {
+  position: static;
+  height: 68vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.2s;
+}
+
+.sidebar-middle::-webkit-scrollbar {
+  width: 10px;
+  display: block;
+}
+
+.sidebar-middle::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-middle::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(215, 210, 210);
+}
+
+.sidebar-list {
+  transition: opacity 2s;
+  max-width: 230px;
+}
+
+.sidebar-list > li {
+  margin: 10px 5px;
+  padding: 5px;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.list-lable {
+  text-align: left;
+}
+
+.sidebar-list > li:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.7),
+    rgb(159, 143, 219, 0.7)
+  );
+  border-radius: 5px;
+}
+
+.sidebar-list > li:active {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.7),
+    rgb(159, 143, 219, 0.7)
+  );
+  border-radius: 5px;
+}
+
+.sidebarLastElement {
+  margin-bottom: -1.2rem !important;
+}
+
+.sidebar-sublist {
+  margin-top: -1rem;
+  font-size: 13px;
+  margin-left: 2rem;
+}
+
+.sidebar-sublist li {
+  padding: 5px 10px;
+}
+
+.sidebar-sublist li:hover {
+  background-color: #f3f3f3;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.sidebar-bottom {
+  margin-top: 2.5rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.profile-card {
+  width: 220px;
+  height: 40px;
+  margin: 10px 5px;
+  padding: 5px;
+  display: flex;
+  border-radius: 7px;
+  align-items: center;
+  transition: 0.2s;
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+}
+
+.logoutbtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutbtn p {
+  font-weight: 700;
+  padding-left: 10px;
+}
+
+.logoutbtn i {
+  position: relative;
+  left: 100%;
+  margin-left: 1rem;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.list-icon {
+  padding-right: 20px;
+}
+
+.collapsed {
+  width: 5vw !important;
+}
+
+.disabled {
+  display: none;
+}
+
+.mody-profile-card {
+  position: relative;
+  left: 0;
+  width: 3.5vw;
+  height: 6vh;
+  cursor: pointer;
+  border: 1px solid #cccccc60;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconsCentermenubtn {
+  position: absolute;
+  left: 2.5rem;
+  top: 0.5rem;
+}
+
+.iconsCenterlogoutbtn {
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+}
+
+.iconsCenterlogoutbtn i {
+  margin-left: -6rem;
+  transition: 0.2s;
+  font-size: 12px;
+}
+
+.iconsCenterlogoutbtn p {
+  display: none;
+}
+
+.Active {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.7),
+    rgb(159, 143, 219, 0.7)
+  );
+  max-width: 100%;
+  border-radius: 5px;
+  color: #275efe;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            5.0 - Header Component                          */
+/* -------------------------------------------------------------------------- */
+
+.header {
+  height: 30px;
+  width: 100%;
+  margin-top: 0.3rem;
+  padding-top: 2rem;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.2s;
+  position: absolute;
+  z-index: 1;
+}
+
+.header button:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  border-radius: 5px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.headerFunctions {
+  position: absolute;
+  right: 1rem;
+  display: flex;
+  height: 30px;
+}
+
+.headerFunctions button {
+  margin: 0 5px;
+}
+
+.headerFunctions i {
+  cursor: pointer;
+  transform: scale(1.2);
+  margin: 0 10px;
+}
+
+.searchbarinput {
+  display: flex;
+}
+
+.searchbarinput > input {
+  position: relative;
+  top: -0.5rem;
+  left: 0.5rem;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  border-right: None;
+  cursor: text;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 68%;
+    width: 300%;
+  }
+  /* --- */
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.searchbarinput input:focus {
+  box-shadow: none;
+}
+
+.searchbarinput input:hover {
+  border: none;
+}
+
+.searchbarinput button {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+  margin-left: 0px;
+}
+
+.searchbtn {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: 0.1rem solid #bbc1e1;
+  border-left: none;
+}
+
+.searchbtn:hover {
+  border-radius: none;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          6.0 - Base Modal Window                           */
+/* -------------------------------------------------------------------------- */
+
+.modal {
+  position: absolute;
+  z-index: 99;
+  top: 7rem;
+  left: 17rem;
+  max-width: 50vw; /* Max width */
+  max-height: 70vh; /* Max height */
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           7.0 - Common Background                          */
+/* -------------------------------------------------------------------------- */
+
+.mainBg {
+  right: 0;
+  width: 80vw;
+  height: 100vh;
+  transition: 0.2s;
+  z-index: -1;
+  position: absolute;
+}
+
+.modyMainBG {
+  transition: 0.2s;
+  width: 94vw;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                            8.0 - Dashboard -Body                            */
+/* -------------------------------------------------------------------------- */
+
+/* --------------------------------- 8.1 - Row One -------------------------------- */
+.row1 {
+  width: 99%;
+  height: 25vh;
+  margin-top: 2.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/* ------------------------------------ 8.1.1 - Sales Box -------------------------------------- */
+.salesBox {
+  width: 30vw;
+  height: 20vh;
+  background: linear-gradient(to bottom right, #ecbaff, hwb(253 56% 14%));
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.head {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 20px;
+}
+
+.subHead {
+  font-size: 0.9rem;
+}
+
+.subHead p {
+  font-weight: bold;
+}
+
+.amount {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: -0.3rem;
+}
+
+.modySalesBox {
+  width: 33.83vw;
+  height: 20vh;
+  background: linear-gradient(to bottom right, #ecbaff, hwb(253 56% 14%));
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  position: relative;
+  margin: 0 0.5rem;
+}
+
+.barContainer {
+  position: absolute;
+  right: 1rem;
+  top: 1.5rem;
+}
+
+.barcustomTooltip {
+  color: #ffffff;
+  width: 65px;
+  background: rgba(160, 143, 219, 0.8);
+  padding: 2.5px;
+  text-align: center;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+/* ----------------------------- 8.1.2 - Transaction Box ---------------------------- */
+
+.transactionsBox {
+  width: 30vw;
+  height: 20vh;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+}
+
+.transactionStatus {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.transactionStatus div {
+  text-align: center;
+}
+
+.transactionStatus h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.modyTransactionsBox {
+  width: 33.83vw;
+  height: 20vh;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 20px;
+  margin: 0 0.5rem;
+}
+
+/* ------------------------------- 8.1.3 - Statistics Box ------------------------------ */
+
+.StatisticsBox {
+  width: 20vw;
+  height: 20vh;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 10px 20px;
+  position: relative;
+  margin: 0 0.5rem;
+  transition: 0.2s;
+}
+
+.modyStatisticsBox {
+  width: 22.33vw;
+  transition: 0.2s;
+}
+
+.modyStatisticsBox .subHead {
+  transition: 0.2s;
+}
+
+.modyStatisticsBox .subHead P {
+  transition: 0.2s;
+  margin-left: 1rem;
+}
+
+.modyStatisticsBox .pieContainer {
+  position: relative;
+  top: -11.5rem;
+  left: 7rem;
+}
+
+.pieContainer {
+  position: relative;
+  top: -11.5rem;
+  left: 6rem;
+}
+
+.piecustomTooltip {
+  color: #000000;
+  width: 45px;
+  background: rgb(243, 243, 243, 0.8);
+  padding: 2.5px;
+  text-align: center;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+/* --------------------------------- 8.2 - Row Two -------------------------------- */
+.row2 {
+  margin-top: -1rem;
+  margin-left: 0.6rem;
+  margin-right: 0.5rem;
+  background-color: #f3f3f3;
+  width: 97.5%;
+  height: 64%;
+  border-radius: 10px;
+}
+
+.row2headerBtn {
+  margin: 0;
+  padding: 15px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
+  z-index: 1;
+  display: flex;
+}
+
+.headerRight {
+  position: relative;
+  left: 73%;
+  margin-top: 1rem;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerRight > i {
+  margin-left: 0.5rem;
+}
+
+.headerRight i {
+  padding: 6px 8px;
+  cursor: pointer;
+}
+
+.headerRight i:hover {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  border-radius: 7px;
+}
+
+.CustomColumnmodal {
+  position: absolute;
+  z-index: 99;
+  top: 7rem;
+  left: 17rem;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 52vh;
+  width: 20vw;
+}
+
+.customColumn {
+  width: 100%;
+  height: 71%;
+  padding: 7px 5px;
+  text-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.modalheader {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.customColumn form {
+  margin: 5px 0;
+  border: 2px solid rgba(0, 0, 0, 0.04);
+  border-radius: 7px;
+  padding: 3px 7px;
+  width: 100%;
+  transition: ease-in-out 0.2s;
+}
+
+.customColumn form:hover {
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.customColumn input {
+  margin-right: 10px;
+}
+
+.customColumn label {
+  margin-right: 10px;
+  font-size: small;
+  padding-left: 10px;
+}
+
+.columnLine {
+  height: 2px;
+  width: 95%;
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  background-color: #b7b7b783;
+}
+
+.customModalfooter {
+  margin: 10px 10px 5px 10px;
+}
+
+.customModalfooter button {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  font-weight: 700;
+  width: 110px;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  line-height: 1.25rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  float: right;
+}
+
+.customModalfooter:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.customModalfooter:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.customModalfooterr:focus-visible {
+  box-shadow: none;
+}
+
+.row2headerbtnPosition {
+  position: relative;
+  top: -10.6rem;
+  left: -0.4rem;
+  background-color: #ffffff00;
+}
+
+.modybtn .headerbtn {
+  width: 7.8rem;
+}
+
+.headerbtn {
+  background-color: #ffffff;
+  border: 0;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.25rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-right: 1.5rem;
+  margin-top: 0.7rem;
+}
+
+.headerbtn:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.headerbtn:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.headerbtn:focus-visible {
+  box-shadow: none;
+}
+
+.activeIcon {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+}
+
+.Container {
+  border-radius: 10px;
+  width: 96%;
+  margin: 0.9rem 0.05rem;
+  margin-top: -4rem;
+  height: 31rem;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.row2height {
+  position: relative;
+  top: -10.5rem;
+  left: -0.5rem;
+  width: 100.5%;
+  height: 41.5rem;
+}
+
+/* ---------------------------------- 8.2.1 - Table --------------------------------- */
+.tableContainer {
+  overflow-x: auto;
+  height: 24rem;
+  margin-top: 3.5rem;
+  position: relative;
+}
+
+.tableheight {
+  height: 35rem;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 99%;
+  table-layout: auto;
+}
+
+.tableHead {
+  color: #000000;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tablediv {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+}
+
+.filterIcon {
+  position: relative;
+  margin-left: 7px;
+}
+
+.filterIcon i {
+  position: absolute;
+  top: -5px;
+}
+
+.tableContainer th:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tableContainer th:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.tableBody td {
+  text-align: center;
+  padding: 10px;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.tableHead th {
+  text-align: center;
+  padding: 15px;
+  border-bottom: 5px solid white;
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+}
+
+.table tr {
+  padding: 10px;
+}
+
+.tableBody tr:hover {
+  background-color: #f3f3f3;
+  transform: scaleX(0.99);
+  transition: transform 0.3s ease;
+  width: 100%;
+  box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.cardTypeImage {
+  vertical-align: middle;
+  width: 45px;
+}
+
+.Pagination {
+  display: flex;
+}
+
+.paginationLeft {
+  font-size: small;
+  padding-top: 5px;
+}
+
+.paginationRight {
+  display: flex;
+  position: absolute;
+  right: 2%;
+}
+
+.ellipses {
+  font-weight: 900;
+}
+
+.paginationbtn {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.paginationButton {
+  font-size: small;
+  cursor: pointer;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #ffffff;
+}
+
+.activeButton {
+  height: 1.5rem;
+  width: 1.5rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+}
+
+/* ------------------------ 8.2.1.1 - Customize Table Checkbox ------------------------ */
+.checkbox-wrapper-29 {
+  --size: 1rem;
+  --background: #fff;
+  font-size: var(--size);
+}
+
+.checkbox-wrapper-29 *,
+.checkbox-wrapper-29 *::after,
+.checkbox-wrapper-29 *::before {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-29 input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-29 .checkbox__label {
+  width: var(--size);
+}
+
+.checkbox-wrapper-29 .checkbox__label:before {
+  content: " ";
+  display: block;
+  height: var(--size);
+  width: var(--size);
+  position: absolute;
+  top: calc(var(--size) * 0.125);
+  left: 0;
+  background: var(--background);
+}
+
+.checkbox-wrapper-29 .checkbox__label:after {
+  content: " ";
+  display: block;
+  height: var(--size);
+  width: var(--size);
+  border: calc(var(--size) * 0.14) solid #000000ac;
+  transition: 200ms;
+  position: absolute;
+  top: calc(var(--size) * 0.125);
+  left: 0;
+  background: var(--background);
+}
+
+.checkbox-wrapper-29 .checkbox__label:after {
+  transition: 100ms ease-in-out;
+}
+
+.checkbox-wrapper-29 .checkbox__input:checked ~ .checkbox__label:after {
+  border-top-style: none;
+  border-right-style: none;
+  -ms-transform: rotate(-45deg); /* IE9 */
+  transform: rotate(-45deg);
+  height: calc(var(--size) * 0.5);
+  border-color: green;
+}
+
+.checkbox-wrapper-29 .checkbox {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+  /* Mobile Safari: */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.checkbox-wrapper-29 .checkbox__label:after:hover,
+.checkbox-wrapper-29 .checkbox__label:after:active {
+  border-color: green;
+}
+
+.checkbox-wrapper-29 .checkbox__label {
+  margin-right: calc(var(--size) * 0.45);
+}
+
+/* ---------------------------------- 8.2.2 - Chart --------------------------------- */
+.chartContainer {
+  background-color: #ffffff;
+  margin-top: 4rem;
+  height: 25rem;
+}
+
+.chartheight {
+  height: 36rem;
+}
+
+.linecustomTooltip {
+  color: #000000;
+  width: 105px;
+  padding: 2.5px;
+  text-align: center;
+  font-size: small;
+  font-weight: bolder;
+  border-radius: 5px;
+}
+
+.lineChartLabel {
+  font-weight: bold;
+  font-size: small;
+  color: #000000;
+}
+
+/* -------------------------- 8.3 - Profile Modal Window -------------------------- */
+.profileModal {
+  width: 400px;
+  height: 900px;
+  padding: 15px;
+}
+
+.modalCross {
+  cursor: pointer;
+  position: absolute;
+  background-color: #ffffff;
+  right: -0.5rem;
+  top: -0.5rem;
+  padding: 3px 10px;
+  border-radius: 50%;
+  font-weight: 700;
+  border: 1px solid black;
+}
+
+.modal-header {
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+.modal-header p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.modal-header button {
+  cursor: pointer;
+  color: #3e8cf3;
+  font-weight: 600;
+  position: relative;
+  left: 75%;
+  background-color: transparent;
+}
+
+.profileTop {
+  display: flex;
+}
+
+.profileimg {
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  margin-right: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.profileimg i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.profileInfo {
+  margin-top: 1rem;
+}
+
+.pofileDetailes table {
+  width: 100%;
+}
+
+.pofileDetailes tr td {
+  padding: 7px 20px;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.profileModal-head {
+  font-weight: 600;
+  width: 110px;
+}
+
+.modal-footer {
+  margin: 20px 20px;
+  float: right;
+}
+
+.modal-footer button {
+  background: linear-gradient(
+    to bottom right,
+    rgba(236, 186, 255, 0.5),
+    rgb(159, 143, 219, 0.5)
+  );
+  font-weight: 700;
+  width: 110px;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  line-height: 1.25rem;
+  text-align: center;
+  text-decoration: none #d1d5db solid;
+  text-decoration-thickness: auto;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-left: 7px;
+}
+
+.modal-footer:hover {
+  background-color: rgb(249, 250, 251);
+}
+
+.modal-footer:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.modal-footer:focus-visible {
+  box-shadow: none;
+}
+/* -------------------------------------------------------------------------- */
+/*                            Master Setting -Body                            */
+/* -------------------------------------------------------------------------- */
+
+.mastersettingBG {
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  height: 85vh;
+  width: 97%;
+  border-radius: 20px;
+}
+
+.mastersettingHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.mastersettingHeader h1 {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.mastersettingHeader-Function {
+  position: absolute;
+  right: 1rem;
+}
+
+.mastersettingHeader-Function i {
+  margin: 0 20px;
+  transform: scale(1.1);
+  cursor: pointer;
+  color: #313131;
+}
+
+.MSTABLE {
+  margin: 10px;
+  width: 98%;
+  border: 0;
+  border-collapse: collapse;
+}
+
+.MSTABLE thead {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+}
+
+.MSTABLE th {
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.MSTABLE th:first-child {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.MSTABLE th:last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.MSTABLE tr {
+  text-align: center;
+  border-top: 5px solid white;
+}
+
+.MSTABLE tr:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  border-radius: 10px;
+  background-color: #f3f3f3;
+}
+
+.MSTABLE td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.MSTABLE td:last-child {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.MSTABLE td {
+  padding: 20px 0;
+}
+
+.active {
+  font-weight: 600;
+  color: green;
+}
+
+.deactive {
+  font-weight: 600;
+  color: red;
+}
+
+.MSoption i {
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.MSoption i:hover {
+  margin: 0 0.5rem;
+  transform: scale(1.2);
+  font-weight: 400;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               9.0 - Trial CSS                              */
+/* -------------------------------------------------------------------------- */
+.dropdown {
+  position: absolute;
+  top: 21.5rem;
+  left: 42rem;
+  z-index: 999;
+}
+
+.alert {
+  font-weight: 700;
+  color: red;
+  animation: move 0.2s ease-in-out;
+}
+
+@keyframes move {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.Reportsrow1 {
+  margin-right: 10px;
+  margin-top: 4rem;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Adjust the number of columns as needed */
+  gap: 10px; /* Adjust the gap between grid items */
+}
+
+.grid-container label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.grid-container input {
+  margin: 0;
+}
+
+.modal-overlay {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.TRadditionalbtn {
+  cursor: pointer;
+  background-color: transparent;
+  position: absolute;
+  right: 1.6rem;
+  top: 6rem;
+  transform: scale(1.5);
+}
+
+.modalFeilds {
+  margin: 0.5rem 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.modalFeilds:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+  margin: 0.5rem 0;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.Reports-Feilds {
+  display: flex;
+}
+
+.feildsRemoveBtn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.feildsRemoveBtn button {
+  cursor: pointer;
+  margin-top: 15px;
+  padding: 0;
+  background-color: transparent;
+  transition: 0.2s ease-in-out;
+}
+
+.feildsRemoveBtn button:hover {
+  color: red;
+}
+
+.reportRow2 {
+  margin-top: 10rem;
+  margin-left: 0.6rem;
+  margin-right: 0.5rem;
+  background-color: #f3f3f3;
+  width: 97.5%;
+  height: 64%;
+  border-radius: 10px;
+}
+
+.reportContainer {
+  border-radius: 10px;
+  width: 96%;
+  margin: 0rem 0.05rem;
+  margin-top: 4rem;
+  height: 30rem;
+  padding: 10px;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.table2 {
+  margin-top: -2rem;
+  position: sticky;
+  top: 0;
+  padding: 2px 0 0 12px;
+  position: relative;
+  z-index: 2;
+}
